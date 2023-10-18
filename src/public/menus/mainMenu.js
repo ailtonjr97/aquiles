@@ -9,7 +9,7 @@ module.exports = [
             {label: 'Totvs', 
             submenu: [
                 {label: 'Produtos', click: () => {
-                    BrowserWindow.getFocusedWindow().webContents.loadFile('src/views/logistica/totvs/produtos/produtos.html');
+                    BrowserWindow.getFocusedWindow().webContents.loadURL('http://192.168.221.131:3000/lgpd/novo-documento');
                 }}
             ]},
         ]
