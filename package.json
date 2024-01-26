@@ -1,8 +1,8 @@
 {
   "name": "aquiles",
-  "productName": "aquiles",
+  "productName": "Fibracem",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Aplicativo Fibracem.",
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",

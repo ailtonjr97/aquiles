@@ -1,5 +1,6 @@
 module.exports = {
   packagerConfig: {
+    icon: './images/logofibra.ico',
     asar: true,
   },
   rebuildConfig: {},

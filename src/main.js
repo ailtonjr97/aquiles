@@ -1,7 +1,5 @@
 const { app, BrowserWindow, Menu, ipcMain} = require('electron');
-const path = require('path');
 const dbProdutos = require('./models/dbProdutos');
-const ejs = require('ejs');
 
 if (require('electron-squirrel-startup')) {
   app.quit();
@@ -15,7 +13,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     height: 1200,
     width: 1500,
-    icon: 'src/public/images/logo.png',
+    icon: './images/logofibra.ico',
     title: 'Fibracem',
     webPreferences: {
       nodeIntegration: true,
@@ -23,9 +21,11 @@ const createWindow = () => {
     }
   });
 
-  mainWindow.loadFile(__dirname + '/views/logistica/totvs/produtos/produtos.html');
-  Menu.setApplicationMenu(menuPrincipal)
+  mainWindow.setMenuBarVisibility(false)
+  mainWindow.loadURL('http://192.168.2.87/login')
 
+/*   Menu.setApplicationMenu(menuPrincipal)
+ */
   // mainWindow.webContents.openDevTools();
 
 };
